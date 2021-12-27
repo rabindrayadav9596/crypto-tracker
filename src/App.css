@@ -57,9 +57,7 @@ a:hover{
 .logo{
     margin:0 0 0 15px;
 }
-.logo a{
-   color: white;
-}
+
 .menu-control-container{
     display: none !important;
     position: absolute !important;
