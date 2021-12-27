@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Menu, Typography, Avatar } from 'antd';
+import { Button, Menu, Typography, Avatar, Divider } from 'antd';
 import { Link } from 'react-router-dom';
 import { HomeOutlined, MoneyCollectOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
 
@@ -31,9 +31,11 @@ const Navbar = () => {
     <div className="nav-container">
       <div className="logo-container">
         <Avatar src={icon} size="large" />
+        <hr/>
         <Typography.Title level={3} className="logo"><Link to="/">Crypto Tracker</Link></Typography.Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
+      <hr/>
       {activeMenu && (
       <Menu>
         <Menu.Item icon={<HomeOutlined />}>
